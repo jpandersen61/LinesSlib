@@ -13,12 +13,12 @@ namespace LinesSlib
 
         public override string ToString()
         {
-            throw new NotImplementedException();
+            return $"Start: {Start}, End: {End}";
         }
 
         public bool Contains(int punkt)
         {
-            throw new NotImplementedException();
+            return (Start <= punkt) && (End >= punkt);
         }
 
         public bool Contains(LineSegment lineSegment)
